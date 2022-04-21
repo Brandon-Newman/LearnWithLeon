@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+header,footer {
+    height: 100px;
+    border: 1px solid black;
+    clear: both;
+}
+
+.row20 {
+    height: 600px;
+    border: 1px solid black;
+    width: 20%;
+    float: left;
+}
+
+.row40 {
+    height: 600px;
+    border: 1px solid black;
+    width: 40%;
+    float: left;
+}
