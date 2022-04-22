@@ -1,0 +1,154 @@
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+    text-align: left;
+    margin-top: 12px;
+}
+
+.nav ul {
+    font: 12px Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    background: black;
+    color: #fff;
+    padding: 12px 20px;
+    border-right-width: 1px;
+    border-right-color: white;
+    border-right-style: solid;
+    text-decoration: none;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+.header {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+
+}
+.header a {
+    float: left;
+    text-align: left;
+    font: bold 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.header p {
+    float: right;
+    text-align: right;
+    font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: gray;
+    margin-top: 20px;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    max-width: 1000px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.grid,
+.col-1-2,
+.col-1-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-1-2,
+.col-1-4 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col-1-2 {
+    width: 45%;
+}
+
+.col-1-4 {
+    width: 25%;
+}
+
+.col-1-2 img {
+    max-width: 100% ;
+}
+.col-1-2 h3,
+.col-1-2 p,
+.col-1-2 h4 {
+float:left;
+}
+
+.grid {
+position: relative;
+display: inline-block;
+}
+
+.col-1-2 h3 {
+    position: absolute;
+    color:#fff;
+    z-index: 999;
+    margin-left: 10px;
+    top: 55%; /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    max-width: 45%; 
+    font: 20px Arial;  
+}
+.col-1-2 p {
+    position: absolute;
+    color:#fff;
+    z-index: 999;
+    margin-left: 10px;
+    top: 70%; /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    max-width: 35%; 
+    font: 12px Arial;  
+
+}
+.col-1-2 h4 {
+    position: absolute;
+    color:#fff;
+    z-index: 999;
+    margin-left: 10px;
+    top: 85%; /* Adjust this value to move the positioned div up and down */
+    text-align: left;
+    max-width: 45%; 
+    font: 12px Arial;  
+    text-transform: uppercase;
+
+}

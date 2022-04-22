@@ -1,0 +1,95 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+span {
+  display: block;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav > *{
+  float: left;
+  width: 33.3333%;
+  list-style: none;
+  margin: 0 auto;
+}
+
+nav ul > li {
+  float: left;
+  width: 16%;
+}
+
+main {
+  padding: 65px;
+  background: paleturquoise;
+}
+.aboutus {
+  padding-left: 40%;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  padding-right: 10%;
+}
+.order {
+  text-align: center;
+  background: lightcyan;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.order ul > li {
+  display: inline;
+  list-style: none;
+}
+.order img {
+  float: left;
+  width: 25%;
+  padding: 30px 2% 65px 2%;
+  background: lightcyan;
+}
+.hours {
+  text-align: center;
+  padding: 65px 10%;
+  background: lightgoldenrodyellow;
+}
+.days {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.hours section+img {
+  padding: 65px 20%;
+}
+.reviews {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+.reviews img {
+  width: 25%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
