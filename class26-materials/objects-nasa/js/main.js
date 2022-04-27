@@ -16,10 +16,15 @@ function getFetch(){
         console.log(data)
         document.querySelector('h3').innerText = data.explanation
         if (data.media_type === 'image'){
-          document.querySelector('img').src = data.hdurl
+          document.querySelector('img').src = data.hdurl;
+          //const iframe = document.querySelector('iframe');
+          //iframe.remove()
+          document.querySelector('iframe').src = "";
         }else if (data.media_type === 'video'){
-          document.querySelector('iframe').src = data.url
-        }}
+          document.querySelector('iframe').src = data.url;
+          document.querySelector('img').src ="" 
+        }
+      }
     )
    
     .catch(err => {
