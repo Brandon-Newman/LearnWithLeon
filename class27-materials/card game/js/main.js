@@ -1,5 +1,7 @@
 //The user will enter a date. Use that date to get the NASA picture of the day from that date! https://api.nasa.gov/
 let deckID = ""
+let player1Score = 0
+let player2Score = 0
 
 //add localstorage option to retain deck
 
@@ -29,12 +31,15 @@ function draw2(){
       let player2Value = convertToNum(data.cards[1].value)
 
       if (player1Value > player2Value) {
-        document.querySelector('h3').innerText = "Player 1 Wins!"
+        document.querySelector('h3').innerText = "Player 1 Wins!";
+        player1Score += 1
       }else if (player1Value < player2Value) {
-        document.querySelector('h3').innerText = "Player 2 Wins!"
+        document.querySelector('h3').innerText = "Player 2 Wins!";
+        player2Score += 1
       }else {
         document.querySelector('h3').innerText = "Time for War!"
       }
+      document.querySelector('#playerScore').innerText = `Player 1:${player1Score} vs Player 2:${player2Score}`
         })
 
     .catch(err => {
@@ -55,3 +60,4 @@ function draw2(){
     else {return Number(val)}
   }
   
+ 
