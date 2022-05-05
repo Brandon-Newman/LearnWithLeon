@@ -4,7 +4,6 @@ let indexID = 0
 
 function getDrink(){
     let drink = document.querySelector('input').value
-    drink = sentenceCase(drink)
 
 fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`)
     .then(res => res.json()) // parse response as JSON
