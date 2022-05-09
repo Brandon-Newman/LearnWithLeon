@@ -12,18 +12,19 @@ function getFetch(){
   fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
-
+        console.log(data)
         pokeStore.push(data.types[0].type.name)
         pokeImg.push(data.sprites.front_shiny)
         
         fetch(url2)
+        console.log(data)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
 
           pokeStore.push(data.types[0].type.name)
           pokeImg.push(data.sprites.front_shiny)
       
-          if((pokeStore[0] === "grass" && pokeStore[1] === 'water')){
+          if((pokeStore[0] === "grass")){
             document.querySelector('#pokeImg1').src = pokeImg[0]
             document.querySelector('#pokeImg2').src = pokeImg[1]
             document.querySelector('h2').innerText = " 2x > "
@@ -43,3 +44,4 @@ function getFetch(){
 
       
 }
+
