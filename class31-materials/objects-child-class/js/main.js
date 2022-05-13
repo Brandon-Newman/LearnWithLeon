@@ -29,3 +29,4 @@ class Cat extends Animal {
         console.log('MEOW')
     }
 }
+
